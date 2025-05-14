@@ -3,7 +3,8 @@ print ">"
 annee_naissance = gets.chomp.to_i
 annee_naissance.upto(2025) do |annee|
 age = annee - annee_naissance
-  puts "En #{annee}, tu avais #{age} an #{age > 1 ? 's' : ''}."
+  #puts "En #{annee}, tu avais #{age} an #{age > 1 ? 's' : ''}."
+  puts "En #{annee}, tu avais #{age} #{age < 2 ? 'an' : 'ans'} "
 end
 
 #gets.chomp.to_i → récupère l’année de naissance et la transforme en nombre.
